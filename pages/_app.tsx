@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import "../styles.scss";
 import config from "../config.json";
 
+/* eslint-disable react/jsx-props-no-spreading */
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Layout
