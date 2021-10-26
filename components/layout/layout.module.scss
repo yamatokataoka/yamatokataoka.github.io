@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.content {
+  background-color: var(--content-background-color);
+  flex: 1;
+}

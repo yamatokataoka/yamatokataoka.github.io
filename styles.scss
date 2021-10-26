@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+  --color: #f3f1ec;
+  --background-color: #001833;
+  --content-background-color: #002147;
+  --link-color: #b2cdff;
+}
+
+body {
+  color: var(--color);
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: Roboto, sans-serif;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-color);
+  text-decoration: none;
+}
