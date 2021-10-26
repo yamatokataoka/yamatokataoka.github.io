@@ -1,5 +1,5 @@
 import React from "react";
-import About from "./about";
+import About from "../components/about";
 import Container from "../components/container";
 
 export default function Index() {
