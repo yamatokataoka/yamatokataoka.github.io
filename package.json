@@ -9,8 +9,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "check": "prettier --check . & eslint . & tsc",
-    "fix": "prettier --write . && eslint . --fix"
+    "check": "prettier --check . & next lint & tsc",
+    "fix": "prettier --write . && next lint --fix"
   },
   "dependencies": {
     "next": "^11.1.2",
