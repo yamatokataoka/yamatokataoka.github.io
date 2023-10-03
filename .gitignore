@@ -3,3 +3,4 @@ node_modules
 out
 yarn-debug.log*
 yarn-error.log*
+tsconfig.tsbuildinfo

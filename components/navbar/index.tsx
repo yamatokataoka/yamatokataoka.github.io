@@ -9,12 +9,8 @@ export default function Navbar({ name, description, avatarSrc }) {
         <>
           <Avatar src={avatarSrc} alt={name} />
           <div className={styles.profileContent}>
-            <Link href="/" className={styles.name}>
-              {name}
-            </Link>
-            <Link href="/" className={styles.description}>
-              {description}
-            </Link>
+            <p className={styles.name}>{name}</p>
+            <p className={styles.description}>{description}</p>
           </div>
         </>
       </Link>

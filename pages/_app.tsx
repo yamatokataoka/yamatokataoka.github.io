@@ -14,9 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       githubLink={config.githubLink}
     >
       <Head>
-        <title>
-          {config.name} - {config.description}
-        </title>
+        <title>{`${config.name} - ${config.description}`}</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
