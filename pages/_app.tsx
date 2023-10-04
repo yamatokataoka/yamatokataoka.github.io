@@ -6,6 +6,8 @@ import config from "../config.json";
 
 /* eslint-disable react/jsx-props-no-spreading */
 export default function MyApp({ Component, pageProps }: AppProps) {
+  const title: string = `${config.name} - ${config.description}`;
+
   return (
     <Layout
       name={config.name}
@@ -14,9 +16,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       githubLink={config.githubLink}
     >
       <Head>
-        <title>
-          {config.name} - {config.description}
-        </title>
+        <title>{title}</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
