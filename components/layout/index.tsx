@@ -11,9 +11,9 @@ export default function Layout({
 }) {
   return (
     <div className={styles.container}>
-        <Navbar name={name} description={description} avatarSrc={avatarSrc} />
-        <main className={styles.content}>{children}</main>
-        <Footer name={name} github={githubLink} />
-      </div>
+      <Navbar name={name} description={description} avatarSrc={avatarSrc} />
+      <main className={styles.content}>{children}</main>
+      <Footer name={name} github={githubLink} />
+    </div>
   );
 }
