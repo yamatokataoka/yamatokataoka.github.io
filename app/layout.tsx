@@ -6,6 +6,7 @@ import config from "../config.json";
 
 export const metadata: Metadata = {
   title: `${config.name} - ${config.description}`,
+  colorScheme: "dark",
 };
 
 export default function RootLayout({ children }) {
