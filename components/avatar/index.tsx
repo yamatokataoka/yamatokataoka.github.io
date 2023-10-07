@@ -1,4 +1,4 @@
-import styles from "./avatar.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Avatar({ src, alt }) {
   return (

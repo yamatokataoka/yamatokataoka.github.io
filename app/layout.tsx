@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import { Roboto_Flex } from "next/font/google";
-import Layout from "../components/layout";
-import "../styles.scss";
+import "./global.scss";
+import styles from "./layout.module.scss";
 import config from "../config.json";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const robotoFlex = Roboto_Flex({ subsets: ["latin"] });
 
@@ -15,14 +17,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={robotoFlex.className}>
       <body>
-        <Layout
-          name={config.name}
-          description={config.description}
-          avatarSrc={config.avatarSrc}
-          githubLink={config.githubLink}
-        >
-          {children}
-        </Layout>
+        <div className={styles.container}>
+          <Navbar
+            name={config.name}
+            description={config.description}
+            avatarSrc={config.avatarSrc}
+          />
+          <main className={styles.content}>{children}</main>
+          <Footer name={config.name} github={config.githubLink} />
+        </div>
       </body>
     </html>
   );
