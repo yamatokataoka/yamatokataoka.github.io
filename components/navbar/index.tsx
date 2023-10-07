@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Avatar from "../avatar";
-import styles from "./navbar.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Navbar({ name, description, avatarSrc }) {
   return (
