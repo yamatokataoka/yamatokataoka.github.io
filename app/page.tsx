@@ -1,11 +1,13 @@
 import React from "react";
 import About from "../components/about";
-import Container from "../components/container";
+import styles from "./page.module.scss";
 
 export default function Index() {
   return (
-    <Container>
-      <About />
-    </Container>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <About />
+      </div>
+    </div>
   );
 }
