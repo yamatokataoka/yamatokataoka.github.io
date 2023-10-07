@@ -18,11 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={robotoFlex.className}>
       <body>
         <div className={styles.container}>
-          <Navbar
-            name={config.name}
-            description={config.description}
-            avatarSrc={config.avatarSrc}
-          />
+          <Navbar name={config.name} description={config.description} />
           <main className={styles.content}>{children}</main>
           <Footer name={config.name} github={config.githubLink} />
         </div>
