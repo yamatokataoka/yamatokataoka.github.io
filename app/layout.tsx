@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import Head from "next/head";
+import { Roboto_Flex } from "next/font/google";
 import Layout from "../components/layout";
 import "../styles.scss";
 import config from "../config.json";
+
+const robotoFlex = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `${config.name} - ${config.description}`,
@@ -11,13 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+    <html lang="en" className={robotoFlex.className}>
       <body>
         <Layout
           name={config.name}
