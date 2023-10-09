@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 export default function Footer({ name, github }) {
   return (
     <footer className={styles.container}>
-      <p className={styles.copyright}>©2021 {name}</p>
+      <p className={styles.copyright}>©{new Date().getFullYear()} {name}</p>
       <div className={styles.links}>
         <Link href="/">Home</Link>
         <span> | </span>
