@@ -7,7 +7,7 @@ services:
         - USER=$USER
     volumes:
       - .:/app
-      - /app/node_modules # not used
+      - /app/node_modules # Not syned with host
     command: ["yarn", "dev"]
     ports:
       - 8080:3000
