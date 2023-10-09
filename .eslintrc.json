@@ -21,8 +21,5 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint"],
-  "rules": {
-    "@next/next/no-img-element": "off"
-  }
+  "plugins": ["@typescript-eslint"]
 }
