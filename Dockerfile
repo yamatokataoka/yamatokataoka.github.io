@@ -1,5 +1,8 @@
 FROM node:18.18.0-alpine
 ARG USER
+
+RUN apk add --no-cache git
+
 USER $USER
 WORKDIR /app
 COPY --chown=$USER package.json yarn.lock ./
