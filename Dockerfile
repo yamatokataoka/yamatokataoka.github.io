@@ -1,9 +1,9 @@
-FROM node:14.17.6-alpine
+FROM node:18.18.0-alpine
 ARG USER
 USER $USER
-WORKDIR /blog
+WORKDIR /app
 COPY --chown=$USER package.json yarn.lock ./
 RUN yarn install
-COPY --chown=$USER . /blog
-EXPOSE 8080
-ENTRYPOINT ["yarn", "start"]
+COPY --chown=$USER . /app
+EXPOSE 3000
+CMD ["yarn", "start"]
