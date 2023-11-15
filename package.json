@@ -36,5 +36,6 @@
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@3.6.4"
 }
