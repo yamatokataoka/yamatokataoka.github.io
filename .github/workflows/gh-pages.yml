@@ -15,13 +15,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "18.18.0"
-          cache: yarn
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Build
-        run: yarn run build
+        run: npm run build
 
       - name: Add nojekyll
         run: touch ./out/.nojekyll
