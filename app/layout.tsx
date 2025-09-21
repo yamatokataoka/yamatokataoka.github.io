@@ -10,7 +10,6 @@ const robotoFlex = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `${config.name} - ${config.description}`,
-  colorScheme: "dark",
 };
 
 export default function RootLayout({ children }) {
@@ -26,3 +25,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export const viewport = {
+  colorScheme: "dark",
+};
