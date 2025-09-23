@@ -1,7 +1,12 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 
-export default function Footer({ name, github }) {
+interface FooterProps {
+  name: string;
+  github: string;
+}
+
+export default function Footer({ name, github }: FooterProps) {
   return (
     <footer className={styles.container}>
       <p className={styles.copyright}>

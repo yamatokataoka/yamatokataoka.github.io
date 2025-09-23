@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Roboto_Flex } from "next/font/google";
 import "./global.scss";
 import styles from "./layout.module.scss";
@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   title: `${config.name} - ${config.description}`,
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={robotoFlex.className}>
       <body>
