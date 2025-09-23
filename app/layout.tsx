@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Roboto_Flex } from "next/font/google";
 import "./global.scss";
 import styles from "./layout.module.scss";
@@ -10,10 +10,13 @@ const robotoFlex = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `${config.name} - ${config.description}`,
-  colorScheme: "dark",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={robotoFlex.className}>
       <body>
@@ -26,3 +29,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export const viewport = {
+  colorScheme: "dark",
+};

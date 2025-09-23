@@ -2,7 +2,12 @@ import Link from "next/link";
 import Avatar from "../avatar";
 import styles from "./styles.module.scss";
 
-export default function Navbar({ name, description }) {
+interface NavbarProps {
+  name: string;
+  description: string;
+}
+
+export default function Navbar({ name, description }: NavbarProps) {
   return (
     <header className={styles.container}>
       <Link href="/" className={styles.profile}>
